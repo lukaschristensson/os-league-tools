@@ -8,6 +8,10 @@ export const LOCALSTORAGE_KEYS = {
     FILTER_HIDE_TODO_TASKS: 'filterHideTodoTasks',
     HIDE_ALERT_BANNER: 'hideAlertBanner',
     USERNAME: 'hiscoresUsername',
+    GRT_TASK_OUTSIDE_UNLOCKED_AREAS: 'taskOutsideUnlockedAreas',
+    GRT_TASK_ONLY_REACHED_REQUIRMENTS: 'taskWithoutReachedRequirements',
+    GRT_TASK_EXCLUDE_LVL_EXP: 'taskIncludeLvlExp',
+    GRT_CURRENT_TASK_ID: 'currentTaskId',
 }
 
 export const SESSIONSTORAGE_KEYS = {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Card, Row, Col, Tabs, Tab, Nav, Form, Button } from "react-bootstrap";
 import taskData from '../resources/taskData.json';
+import RandomTaskTab from "./RandomTask"
 import {
     getMaxCompletableTasks,
     isTaskComplete,
@@ -141,6 +142,13 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                             setShowHiddenTasks={setShowHiddenTasks}
                             hiscores={hiscores}
                             refreshHiscores={refreshHiscores}
+                        />
+                    </Tab>
+                    <Tab eventKey="rtask" title="Generate Random Task (Beta)">
+                        <RandomTaskTab
+                            refreshHiscores={refreshHiscores}
+                            highscore={hiscores}
+                            unlockedRegions={unlockedRegions}
                         />
                     </Tab>
                 </Tabs>
